@@ -24,6 +24,20 @@ export function Home() {
 
   return (
     <div className="max-w-lg mx-auto space-y-6">
+      <section className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm bg-white">
+        <img
+          src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+          alt="Social feed preview"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="text-xl font-semibold">Welcome to your Instagram-inspired feed</h2>
+          <p className="mt-2 text-gray-600 text-sm">
+            This sample image shows how post media will appear in the app. Scroll down to view actual posts from the API.
+          </p>
+        </div>
+      </section>
+
       {posts?.map((post) => (
         <article key={post.id} className="bg-white border border-gray-200 rounded-lg">
           {/* Post Header */}
